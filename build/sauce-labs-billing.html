@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauce Labs New Billing Model &#183; Gabriel Cardoso</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/build/img/favicon.png">
+  </head>
+  <body class="text-gray-900">
+    <header>
+      <section class="pt-6 px-3 sm:p-8 flex flex-col sm:flex-row justify-between items-center">
+        <h1>
+          <a href="index.html" class="text-xl font-medium tracking-tight">Gabriel<span class="text-accent">Cardoso</span></a>
+        </h1>
+        <nav class="space-x-4 pt-2 pb-6 sm:p-0" aria-label="main">
+          <a href="index.html" class="px-1 leading-8 inline-block hover:border-b-2 hover:border-accent">Home</a>
+          <a href="index.html#projects" class="border-b-2 border-accent px-1 leading-8 inline-block">Projects</a>
+          <a href="https://www.dropbox.com/s/ijw3sbka0mbsw0b/resume-gabriel-cardoso-2023-tr.pdf?dl=0" target="_blank" class="px-1 leading-8 inline-block hover:border-b-2 hover:border-accent transition duration-300">Resumé</a>
+          <a href="https://www.linkedin.com/in/gabrielcardoso/" target="_blank" class="px-1 leading-8 inline-block hover:border-b-2 hover:border-accent transition duration-300">LinkedIn</a>
+        </nav>
+      </section>
+    </header>
+    <main class="pb-16">
+      <!-- Header -->
+      <div class="px-3">
+        <section id="project-header" class="container mx-auto grid grid-cols-12 bg-gradient-to-bl from-violet-100 to-lime-100 from-50% to-110% rounded-2xl sm:h-72 md:h-64 overflow-hidden">
+          <div class="p-6 sm:py-10 sm:pl-10 col-span-12 sm:col-span-9 md:col-span-8 lg:col-span-6 xl:col-span-5 2xl:col-span-4">
+            <h1 class="text-3xl sm:text-4xl">Sauce Labs <br>New Billing Model</h1>
+            <ul class="mt-6 sm:mt-10 text-lg">
+              <li class="inline-block">User research</li> 
+              <li class="inline-block">Wireframing</li>
+              <li class="inline-block">Content Definition</li>
+              <li class="inline-block">Prototyping</li>
+              <li class="inline-block">Usability Testing</li>
+              <li class="inline-block">Visual Design</li>
+            </ul>
+          </div>
+          <div class="hidden sm:block sm:col-span-3 md:col-span-4 lg:col-span-6 xl:col-span-7 2xl:col-span-8">
+            <img src="/build/img/sl-billing-header.png" alt="Sauce Labs pricing page on mobile" class="object-cover object-left h-full w-full">
+          </div>
+        </section>
+      </div>
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <h2 class="mt-16 text-accent text-4xl">The Problem</h2>
+        <p class="text-lg mt-4">Sauce Labs, the world's largest continuous testing cloud of web and mobile applications, wanted to introduce a new credits-based billing model to their self-serve customers. They had the <span class="font-semibold">product goal</span> of increasing the number of paying customers, and the <span class="font-semibold">business goal</span> of increasing revenue. The Billing product team was tasked with delivering a new purchase flow.</p>
+        <p class="text-lg mt-6">As the lead product designer, I established the <span class="font-semibold">design goal</span> of providing a frictionless purchase flow that converted higher than the previous one. To deliver this project I worked directly with a product manager, another product designer, a content writer, a UX Researcher, and several developers. <span class="font-semibold">Stakeholders</span> were the Director of Customer Experience and the Chief Product Officer.</p>
+        <figure class="mt-8">
+          <img src="/build/img/sl-billing-problem.jpg" alt="Sauce Labs former pricing page" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">Sauce Labs former pricing page, with the previous billing model.</figcaption>
+        </figure>
+
+        <h2 class="mt-16 text-accent text-4xl">The Design Process</h2>
+        <img src="/build/img/sl-billing-process.svg" alt="Design process: discover, define, ideate, test, refine, deliver" class="mt-8">
+
+        <h2 class="mt-12 text-3xl">Discovery: User Research</h2>
+        <p class="text-lg mt-4">The billing team wanted to <span class="font-semibold">validate if our users were interested in a credits-based model</span>. To get feedback, I've designed a call to action on our product pricing page, which asked if they would like to try a credits-based plan. That led to a survey, which I created with the PM. We could <span class="font-semibold">observe</span> that there was interest from users to try a credits-based model; that users primarily think of testing in terms of duration of execution; and that users need to be able to monitor their usage to not go over the limit. The observations brought confidence to the team and insights into essential features.</p>
+
+        <h2 class="mt-12 text-3xl">Competitive Analysis</h2>
+        <p class="text-lg mt-4">I started with a <span class="font-semibold">discovery of how SaSS services are presenting credit-based plans</span> and their purchase flows. I also analyzed how our competitors presented their plans and checkout, as well as some well-established SaSS products for developers. <span class="font-semibold">Findings</span>: On Pricing pages you can see a pattern of highlighting one plan among three or four, a list of features, a more detailed breakdown of cost, and a FAQ.</p>
+        <figure class="mt-8">
+          <img src="/build/img/sl-billing-analysis.jpg" alt="Screenshots of pricing pages of SaSS products" class="rounded-2xl">
+          <figcaption class="mt-4 text-medium">Screenshots of pricing pages of SaSS products.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Ideation: Team Workshop</h2>
+        <p class="text-lg mt-4">The team got together online for a <span class="font-semibold">workshop to define the scope of an MVP</span>. It was an intense collaboration between the product manager, myself, and engineers. I advocated for the user to make sure the experience would be great. After three days we had a clear picture of what were the <span class="font-semibold">user stories</span> we would like to cover: allowing users to buy a new credits plan, offering auto top-up if credits went low, and monitoring the credits balance.</p>
+        <img src="/build/img/sl-billing-workshop.svg" alt="Image showing three circles written Product Manager, Designer, and Engineers" class="mt-8 mx-auto">
+
+        <h2 class="mt-12 text-3xl">Scenarios and User Flows</h2>
+        <p class="text-lg mt-4">I used <span class="font-semibold">persona-based scenarios</span> to envision positive experiences of our users with the product, which opened up to different ideas. After that, I created <span class="font-semibold">user flows</span> to make sure all interactions were accounted for.</p>
+        <figure class="mt-8">
+          <img src="/build/img/sl-billing-scenario.jpg" alt="Screenshots of pricing pages of SaSS products" class="rounded-2xl">
+          <figcaption class="mt-4 text-medium">Example of persona-based scenario and user flow.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Mid-Fidelity Prototypes</h2>
+        <p class="text-lg mt-4">Having user flows, I <span class="font-semibold">started to ideate on mid-fidelity prototypes</span> and partnered with another designer. The initial ideation was around three concepts. On the left, are the options of purchasing the new or old plan, and further information about each plan is on the next screen. In the middle is the pricing page that was in place, and when clicking on Add Plan, the old and new plans are presented. On the right, the new and old plans are side by side, highlighting which plan is better for whom, with a direct comparison of features. I presented the concepts in design critique sessions and moved forward with the concept at the right, which made it easier to make a decision straight away.</p>
+      </div>
+
+      <!-- Container 1536 -->
+      <div class="px-3 container mx-auto">
+        <figure class="mt-8">
+          <img src="/build/img/sl-billing-wireframes.jpg" alt="Wireframes showing initial ideation on three design concepts">
+          <figcaption class="mt-4 text-medium">Initial ideation on three design concepts.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <h2 class="mt-12 text-3xl">Feedback: the CTO vision</h2>
+        <p class="text-lg mt-4">Having refined the concept, we <span class="font-semibold">presented it to the CTO</span> to get buy-in from the business. He had a different perspective on how to present plans, preferring to show only the new credits-based plan to remove friction. The con is that we would not have data to know which plan users prefer side by side. I've proposed to <span class="font-semibold">run an A/B test</span>, offering the old plan to half of users, and the new plan to the other half. In this way, we could measure the winner. We worked on several designs that presented only the new plan.</p>
+        
+        <h2 class="mt-12 text-3xl">Rapid Iterative Testing and Evaluation (RITE)</h2>
+        <p class="text-lg mt-4">We wanted to <span class="font-semibold">test variations of the new pricing page</span>. We involved the UX Researcher and decided to do Rapid Iterative Testing and Evaluation. We recruited internal employees who met our personas. I’ve created Figma interactive high-fidelity prototypes, and we run the tests over Zoom. After four tests we adjusted the designs and ran four more tests. <span class="font-semibold">Observations</span>: Developers wanted to have all the crucial information initially exposed in the UI; Developers could estimate how much time their tests take, and calculate the plan they needed.</p>
+      </div>
+
+      <!-- Container 1536 -->
+      <div class="px-3 container mx-auto">
+        <figure class="mt-8">
+          <img src="/build/img/sl-billing-test.jpg" alt="Two prototypes tested in the first round of RITE testing">
+          <figcaption class="mt-4 text-medium">Two prototypes tested in the first round of RITE testing.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <h2 class="mt-12 text-3xl">Purchase flow for the MVP</h2>
+        <p class="text-lg mt-4">I've <span class="font-semibold">proposed an updated pricing page</span> based on the observations gathered during the testing. I went with a layout that presented the benefits of the plan and allowed the users to choose the amount of credits at the top, followed by a breakdown of pricing below, and a simple FAQ, all of them visible from the beginning (left image). In addition, I've updated the checkout page (middle image) and we created a success page for after the purchase (right image), which together formed the <span class="font-semibold">total purchase flow</span>. The designs were done using Figma auto-layout feature and using the available design system components. </p>
+      </div>
+
+      <!-- Container 1536 -->
+      <div class="px-3 container mx-auto">
+        <figure class="mt-8">
+          <img src="/build/img/sl-billing-flow.jpg" alt="Three UIs forming the complete purchase flow for the MVP">
+          <figcaption class="mt-4 text-medium">The complete purchase flow for the MVP.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <h2 class="mt-12 text-3xl">Post Design: Implementation and Analytics</h2>
+        <p class="text-lg mt-4">I consider that the <span class="font-semibold">design is not done until it is shipped</span>. As UIs were implemented, I reviewed them and collaborated with the developers to make sure they were looking and behaving as designed. To speed up the process, <span class="font-semibold">I put my hand in the code</span> and adjusted some UI details, and CSS, and sent merge requests.</p>
+        <p class="text-lg mt-6">I kept monitoring the performance of the new flow in <span class="font-semibold">analytics tools</span>, observing the purchase funnel in Pendo, the purchases in Looker, and how the users were interacting with the UIs in MS Clarity. Those observations led to opportunities for improvement that were brought to the team.</p>
+      </div>
+
+      <!-- Container 1536 -->
+      <div class="px-3 container mx-auto">
+        <figure class="mt-8">
+          <img src="/build/img/sl-billing-freemium.jpg" alt="Pricing page MVP and next version with Free and Annual plan">
+          <figcaption class="mt-4 text-medium">Pricing page MVP (left) and next version with Free and Annual plan (right).</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <h2 class="mt-16 text-accent text-4xl">Website Pricing Page</h2>
+        <p class="text-lg mt-4">Having an updated pricing page for logged-in users inside the product, there was the need to <span class="font-semibold">update the pricing page on the main website</span>. I partnered with the Director of Customer Experience and worked on a design that was an increment to the product pricing page, <span class="font-semibold">showcasing a credit calculator</span>. The company website was being redesigned with a new design language, so I applied the <span class="font-semibold">new language</span> to the page.</p>      
+      </div>
+
+      <!-- Container 1536 -->
+      <div class="px-3 container mx-auto">
+        <figure class="mt-8">
+          <img src="/build/img/sl-billing-website.jpg" alt="Website in desktop and mobile resolutions">
+          <figcaption class="mt-4 text-medium">Website in desktop (left) and mobile (right) resolutions.</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <section>
+          <h2 class="mt-16 text-accent text-4xl">Takeaways</h2>
+          <ul class="text-lg mt-4 list-disc list-outside pl-6">
+            <li>It was a high-complexity project with multiple stakeholders. Collaboration was the key to delivering it.</li>
+            <li>Prototyping and testing helped us understand the user experience and feel confident in which direction to go.</li>
+            <li>Pair design was initially challenging but elevated the quality of the delivered UIs.</li>
+            <li>Close work with engineers was effective as UIs looked very similar to the designs.</li>
+            <li>Even though the new plan was converting better (higher number of subscriptions), it was bringing less revenue. By the time I stopped working on the project, we were experimenting with ways to increase revenue.</li>
+          </ul>      
+        </section>      
+        <hr class="mt-16 border-slate-200">  
+
+        <h2 class="mt-16 text-accent text-4xl">More Projects</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <a href="awake-app.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300">
+            <img src="/build/img/awake.png" alt="iPhone with the Awake application" class="hover:scale-110 transition duration-300">
+            <div class="px-10">
+              <h3 class="text-xl xl:text-2xl font-medium">Awake mobile application</h3>
+              <p class="mt-2 uppercase text-medium">Case Study</p>
+            </div>
+          </a>
+          <a href="bhakti-marga-website.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300">
+            <img src="/build/img/bm-website.png" alt="iPad with the Bhakti Marga website" class="hover:scale-110 transition duration-300">
+            <div class="px-10">
+              <h3 class="text-xl xl:text-2xl font-medium">Bhakti Marga website</h3>
+              <p class="mt-2 uppercase text-medium">Case Study</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Interested in working together? -->
+      <section class="mx-3">
+        <div class="mt-16 mx-auto p-12 container bg-gradient-to-bl from-violet-100 to-lime-100 from-50% to-110% rounded-2xl ">
+          <h2 class="text-4xl text-center">Interested in working together?</h2>
+          <p class="text-lg text-center mt-4">Drop me a line and I'll be happy to get back to you :)</p>
+          <div class="text-center mt-10">
+            <a href="mailto:gabrielc.cardoso@gmail.com" class="inline-block text-xl font-medium px-6 py-3 text-white bg-accent hover:bg-accentHover rounded-xl border-accent hover:border-accentHover border-2 m-2 transition duration-300">Contact Me</a>
+            <a href="https://www.dropbox.com/s/ijw3sbka0mbsw0b/resume-gabriel-cardoso-2023-tr.pdf?dl=0" target="_blank" class="inline-block text-xl font-medium px-6 py-3 text-accent hover:bg-accentHover hover:text-white rounded-xl border-accent hover:border-accentHover border-2 m-2 transition duration-300">View my CV</a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Go to Top -->
+      <div class="fixed bottom-8 right-8">
+        <a href="#" id="scroll-to-top" class="bg-accent hover:bg-accentHover rounded-full w-16 h-16 flex items-center justify-center drop-shadow-md opacity-0 transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white" class="h-8"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"/></svg>    
+        </a>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhakti Marga Website &#183; Gabriel Cardoso</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/build/img/favicon.png">
+  </head>
+  <body class="text-gray-900">
+    <header>
+      <section class="pt-6 px-3 sm:p-8 flex flex-col sm:flex-row justify-between items-center">
+        <h1>
+          <a href="index.html" class="text-xl font-medium tracking-tight">Gabriel<span class="text-accent">Cardoso</span></a>
+        </h1>
+        <nav class="space-x-4 pt-2 pb-6 sm:p-0" aria-label="main">
+          <a href="index.html" class="px-1 leading-8 inline-block hover:border-b-2 hover:border-accent">Home</a>
+          <a href="index.html#projects" class="border-b-2 border-accent px-1 leading-8 inline-block">Projects</a>
+          <a href="https://www.dropbox.com/s/ijw3sbka0mbsw0b/resume-gabriel-cardoso-2023-tr.pdf?dl=0" target="_blank" class="px-1 leading-8 inline-block hover:border-b-2 hover:border-accent transition duration-300">Resumé</a>
+          <a href="https://www.linkedin.com/in/gabrielcardoso/" target="_blank" class="px-1 leading-8 inline-block hover:border-b-2 hover:border-accent transition duration-300">LinkedIn</a>
+        </nav>
+      </section>
+    </header>
+    <main class="pb-16">
+      <!-- Header -->
+      <div class="px-3">
+        <section id="project-header" class="container mx-auto grid grid-cols-12 bg-gradient-to-bl from-violet-100 to-lime-100 from-50% to-110% rounded-2xl sm:h-72 md:h-64 overflow-hidden">
+          <div class="p-6 sm:py-10 sm:pl-10 col-span-12 sm:col-span-9 md:col-span-8 lg:col-span-6 xl:col-span-5 2xl:col-span-4">
+            <h1 class="text-3xl sm:text-4xl">Bhakti Marga <br>Website</h1>
+            <ul class="mt-6 sm:mt-10 text-lg">
+              <li class="inline-block">Project Coordination</li> 
+              <li class="inline-block">Information Architecture</li>
+              <li class="inline-block">User Research</li>
+              <li class="inline-block">Visual Design</li>
+              <li class="inline-block">Front-End Dev</li>
+            </ul>
+          </div>
+          <div class="hidden sm:block sm:col-span-3 md:col-span-4 lg:col-span-6 xl:col-span-7 2xl:col-span-8">
+            <img src="/build/img/bm-header.png" alt="Two pages of the Bhakti Marga website" class="object-cover object-left h-full w-full">
+          </div>
+        </section>
+      </div>
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <h2 class="mt-16 text-accent text-4xl">The Problem</h2>
+        <p class="text-lg mt-4">Bhakti Marga, a spiritual organization, wanted to have their main website redesigned so that newcomers could better understand the mission, and the offerings, and find a way to connect in person. I was tasked with leading the design and coordinating the project.</p>
+        <p class="text-lg mt-6">As the lead designer, I guided the team through the design process, from gathering user requirements to publishing a website in production. To deliver this project I worked directly with content writers, photographers, another designer, and a web developer. Stakeholders were two directors of the organization and one spiritual leader.</p>
+        <figure class="mt-8">
+          <img src="/build/img/bm-website-old.jpg" alt="Bhakti Marga's previous home page" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">Bhakti Marga's previous home page.</figcaption>
+        </figure>
+
+        <h2 class="mt-16 text-accent text-4xl">The Design Process</h2>
+        <img src="/build/img/awake-process.svg" alt="Design process: discover, define, ideate, refine, deliver, test" class="mt-8">
+
+        <h2 class="mt-12 text-3xl">Discovery: User Research</h2>
+        <p class="text-lg mt-4">Since there was a website that was being used, I wanted to understand the needs, desires, and pain-points of the current users. To get feedback, I led a UX research, partnering with three members of the media team. We teamed up in doubles and interviewed eight users. I consolidated the interview notes, summarized the findings, and presented them to the team. This research unveiled requirements for the website, and material to model personas.</p>
+        <figure class="mt-8">
+          <img src="/build/img/bm-research.jpg" alt="Partial interview notes of two participants" class="rounded-2xl">
+          <figcaption class="mt-4 text-medium">Partial interview notes of two participants.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Definition: Personas</h2>
+        <p class="text-lg mt-4">From the data gathered in the user research, I identified behavioral patterns and modeled two personas. As we only spoke to current users of the website, I created a third persona-hypothesis to represent users who access the website for the first time. As a result, we had two primary personas and a secondary persona.</p>
+        <figure class="mt-8">
+          <img src="/build/img/bm-persona.jpg" alt="Partial snapshot of a primary persona" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">Partial snapshot of a primary persona.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Product Backlog</h2>
+        <p class="text-lg mt-4">The results of interviews, combined with the meetings with stakeholders generated a list of needs for the website. I was responsible for maintaining the product backlog and validating the user stories with the stakeholders.</p>
+        <figure class="mt-8">
+          <img src="/build/img/bm-backlog.jpg" alt="Three user stories from the product backlog" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">A few user stories from the product backlog.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Ideation: card-sorting exercise</h2>
+        <p class="text-lg mt-4">Given that the website had a lot of pieces of information to cover, I led a card-sorting exercise, with the participation of another designer and a director. From this exercise, we could map the basis of the information architecture.</p>
+        <figure class="mt-8">
+          <img src="/build/img/bm-card-sorting.jpg" alt="Card-sorting exercise using post-its on a wall" class="rounded-2xl">
+          <figcaption class="mt-4 text-medium">Card-sorting exercise using post-its on a wall.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Information Architecture</h2>
+        <p class="text-lg mt-4">From the card-sorting exercise, I've proposed an information architecture for the website, considering the multiple pieces of content needed. I met with the content team and with stakeholders, and together we adjusted the IA map.</p>
+        <figure class="mt-8">
+          <img src="/build/img/bm-ia.jpg" alt="A portion of the Information Architecture map" class="rounded-2xl">
+          <figcaption class="mt-4 text-medium">A portion of the Information Architecture map.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Persona-based scenarios</h2>
+        <p class="text-lg mt-4">I've worked with persona-based scenarios for journeys that required more interactions, such as looking for a centre near me. I use scenarios as part of ideation before going into wireframes, since it allows more flexibility and creativity.</p>
+        <figure class="mt-8">
+          <img src="/build/img/bm-scenario.jpg" alt="A persona-based scenario for one of the sections of the website" class="rounded-2xl">
+          <figcaption class="mt-4 text-medium">A persona-based scenario for one of the sections of the website.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Wireframes</h2>
+        <p class="text-lg mt-4">I've used wireframes for sections of the website that we needed to create from scratch, such as the Bhakti Marga Community, which comprehended a search feature and a map. As I had already a components library in place, other pages of the website were created directly on the CMS.</p>
+        <figure class="mt-8">
+          <img src="/build/img/bm-wireframe.jpg" alt="Wireframe with test results in the Community page" class="rounded-2xl">
+          <figcaption class="mt-4 text-medium">Wireframe with test results in the Community page.</figcaption>
+        </figure>
+
+        <h2 class="mt-12 text-3xl">Visual Design</h2>
+        <p class="text-lg mt-4">The organization already had a brand and a design language, which needed to be adapted to the web medium. Some of the characteristics of the language were the usage of a sans-serif font, titles in uppercase, opaque layers over images, and background gradients.</p>
+        <p class="text-lg mt-6">Having a rich archive of photographs, I explored the usage of images to contrast with the chunks of text. I worked with three types of containers, and different grid compositions to make the pages interesting.</p>
+      </div>
+
+      <!-- Container 1024 -->
+      <div class="px-3 container lg:max-w-5xl mx-auto">
+        <figure class="mt-12">
+          <img src="/build/img/bm-homepage.jpg" alt="Top area of the redesigned homepage, highlighting the value proposition, and main links to follow" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">Top area of the redesigned homepage, highlighting the value proposition, and main links to follow.</figcaption>
+        </figure>
+
+        <figure class="mt-12">
+          <img src="/build/img/bm-ashrams.jpg" alt="A portion of an internal page, showcasing cards, different containers, and grids" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">A portion of the Community page, showcasing cards, different containers, and grids.</figcaption>
+        </figure>
+
+        <figure class="mt-12">
+          <img src="/build/img/bm-path.jpg" alt="A portion of an internal page, with the four main paths, and a two-column grid composition" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">A portion of the Path page, with the four main paths, and a two-column grid composition.</figcaption>
+        </figure>
+
+        <figure class="mt-12">
+          <img src="/build/img/bm-cards.jpg" alt="A portion of an internal page, with the four main paths, and a two-column grid composition" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">A portion of the Leadership page, displaying expandable cards in a four-column grid.</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <section>
+          <h2 class="mt-16 text-accent text-4xl">The Development</h2>
+          <p class="text-lg mt-4">The website was built in the Drupal CMS. I partnered with a developer, who did the backend and more complex features, whilst I did page building and front-end development. We set up a website version on staging and I created the pages using components, which could be populated directly by the content team. I took care that the website was rendering well for tablets and mobile phones, which represented about half of the access. After published, the website was ranking very well in terms of performance, accessibility, and SEO.</p>
+        </section>
+      </div>
+
+      <!-- Container 1024 -->
+      <div class="px-3 container lg:max-w-5xl mx-auto">
+        <figure class="mt-12">
+          <img src="/build/img/bm-community.jpg" alt="Implemented Community page showing search results on a list and a map" class="rounded-2xl border border-slate-200">
+          <figcaption class="mt-4 text-medium">Implemented Community page showing search results on a list and a map.</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <section>
+          <h2 class="mt-16 text-accent text-4xl">User Feedback</h2>
+          <p class="text-lg mt-4">After the website was released and been used for about a month, we asked users for feedback. We got 48 respondents, and the majority considered that the website matched the organization's branding, that the navigation was clear, and that the design was good or very good.</p>
+        </section>
+      </div>
+
+      <!-- Container 1024 -->
+      <div class="px-3 container lg:max-w-5xl mx-auto">
+        <figure class="mt-12">
+          <img src="/build/img/bm-feedback.jpg" alt="Data from four questions asked in a survey post-release.">
+          <figcaption class="mt-4 text-medium">Data from some questions asked in a survey post-release.</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Container 768 -->
+      <div class="px-3 container lg:max-w-3xl mx-auto">
+        <section>
+          <h2 class="mt-16 text-accent text-4xl">Takeaways</h2>
+          <ul class="text-lg mt-4 list-disc list-outside pl-6">
+            <li>As the organization is rich in content, it was challenging to define which content to present, being clear but not overwhelming the users with too much.</li>
+            <li>One director was very opinionated about how the website should be. I needed to defend my design ideas by relying on a solid process with steps validated by the team.</li>
+            <li>The initial user research was valuable to gather user requirements and better understand the audience.</li>
+            <li>The close work with the developer ensured that the website behaved and performed well in benchmark evaluations.</li>
+            <li>The final survey showed that people received the website well and could navigate through the content, which was our goal.</li>
+          </ul>      
+        </section>      
+        <hr class="mt-16">  
+
+        <!-- More Projects -->
+        <h2 class="mt-16 text-accent text-4xl">More Projects</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <a href="sauce-labs-billing.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300 overflow-hidden">
+            <img src="/build/img/sl-billing.png" alt="MacBook with the Sauce Labs pricing page" class="hover:scale-110 transition duration-300">
+            <div class="px-10">
+              <h3 class="text-xl xl:text-2xl font-medium">Sauce Labs billing model</h3>
+              <p class="mt-2 uppercase text-medium">Case Study</p>
+            </div>
+          </a>
+          <a href="awake-app.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300">
+            <img src="/build/img/awake.png" alt="iPhone with the Awake application" class="hover:scale-110 transition duration-300">
+            <div class="px-10">
+              <h3 class="text-xl xl:text-2xl font-medium">Awake mobile application</h3>
+              <p class="mt-2 uppercase text-medium">Case Study</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Interested in working together? -->
+      <section class="mx-3">
+        <div class="mt-16 mx-auto p-12 container bg-gradient-to-bl from-violet-100 to-lime-100 from-50% to-110% rounded-2xl ">
+          <h2 class="text-4xl text-center">Interested in working together?</h2>
+          <p class="text-lg text-center mt-4">Drop me a line and I'll be happy to get back to you :)</p>
+          <div class="text-center mt-10">
+            <a href="mailto:gabrielc.cardoso@gmail.com" class="inline-block text-xl font-medium px-6 py-3 text-white bg-accent hover:bg-accentHover rounded-xl border-accent hover:border-accentHover border-2 m-2 transition duration-300">Contact Me</a>
+            <a href="https://www.dropbox.com/s/ijw3sbka0mbsw0b/resume-gabriel-cardoso-2023-tr.pdf?dl=0" target="_blank" class="inline-block text-xl font-medium px-6 py-3 text-accent hover:bg-accentHover hover:text-white rounded-xl border-accent hover:border-accentHover border-2 m-2 transition duration-300">View my CV</a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Go to Top -->
+      <div class="fixed bottom-8 right-8">
+        <a href="#" id="scroll-to-top" class="bg-accent hover:bg-accentHover rounded-full w-16 h-16 flex items-center justify-center drop-shadow-md opacity-0 transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white" class="h-8"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"/></svg>    
+        </a>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

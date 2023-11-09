@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#intro li:not(:last-child)::after,
+#skillset li:not(:last-child)::after,
+#project-header li:not(:last-child)::after {
+    content: ' ·';
+  color: #94a3b8;
+  margin: 4px;
+}
