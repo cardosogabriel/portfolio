@@ -5,7 +5,7 @@
 #intro li:not(:last-child)::after,
 #skillset li:not(:last-child)::after,
 #project-header li:not(:last-child)::after {
-    content: ' ·';
+  content: ' ·';
   color: #94a3b8;
   margin: 4px;
-}
+} 
