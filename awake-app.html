@@ -6,6 +6,7 @@
     <title>Awake Mobile Application &#183; Gabriel Cardoso</title>
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="icon" type="image/png" href="dist/img/favicon.png">
+    <script>document.documentElement.classList.add('js')</script>
   </head>
   <body class="text-gray-900">
     <header>
@@ -21,9 +22,9 @@
         </nav>
       </section>
     </header>
-    <main class="pb-16">
+    <main class="pb-8">
       <!-- Header -->
-      <div class="px-3">
+      <div class="px-3 delay-[300ms] duration-[600ms] taos:translate-y-[50px] taos:opacity-0">
         <section id="project-header" class="container mx-auto grid grid-cols-12 bg-gradient-to-bl from-violet-100 to-lime-100 from-50% to-110% rounded-2xl sm:h-72 md:h-64 overflow-hidden">
           <div class="p-6 sm:py-10 sm:pl-10 col-span-12 sm:col-span-9 md:col-span-8 lg:col-span-6 xl:col-span-5 2xl:col-span-4">
             <h1 class="text-3xl sm:text-4xl">Awake <br>Mobile Application</h1>
@@ -42,7 +43,7 @@
         </section>
       </div>
       <!-- Container 768 -->
-      <div class="px-3 container lg:max-w-3xl mx-auto">
+      <div class="px-3 container lg:max-w-3xl mx-auto delay-[600ms] duration-[600ms] taos:translate-y-[50px] taos:opacity-0">
         <h2 class="mt-16 text-accent text-4xl">The Opportunity</h2>
         <p class="text-lg mt-4">About 10 years ago, I was in search of a good app with spiritual teachings.  By talking to a friend who is also a developer, we realized that <span class="font-semibold">there was a gap to cover</span>: a mobile app that offered good spiritual content, good design, and a freemium model. Seeing this opportunity, we were set to make good use of technology to transform the spiritual practice of people, and the Awake app was born. </p>
         <p class="text-lg mt-6">As the designer, I was <span class="font-semibold">responsible for the whole UI/UX design process</span>, including branding and social media. To get it done, I've collaborated with the developer and talked to a lot of people to get feedback on all steps of the project.</p>
@@ -185,24 +186,27 @@
             <li>Even though we couldn't establish a sustainable business model, the app benefited thousands of people with its positive messages and it's still available on the Google Play Store. Later on, a spiritual organization requested us to make a similar app crafted to their community.</li>
           </ul>      
         </section>      
-        <hr class="mt-16">  
-
-        <h2 class="mt-16 text-accent text-4xl">More Projects</h2>
-        <div class="mt-8 grid gap-6 md:grid-cols-2">
-          <a href="bhakti-marga-website.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300">
-            <img src="dist/img/bm-website.png" alt="iPad with the Bhakti Marga website" class="hover:scale-110 transition duration-300">
-            <div class="px-10">
-              <h3 class="text-xl xl:text-2xl font-medium">Bhakti Marga website</h3>
-              <p class="mt-2 uppercase text-medium">Case Study</p>
-            </div>
-          </a>
-          <a href="sauce-labs-billing.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300 overflow-hidden">
-            <img src="dist/img/sl-billing.png" alt="MacBook with the Sauce Labs pricing page" class="hover:scale-110 transition duration-300">
-            <div class="px-10">
-              <h3 class="text-xl xl:text-2xl font-medium">Sauce Labs billing model</h3>
-              <p class="mt-2 uppercase text-medium">Case Study</p>
-            </div>
-          </a>  
+        <hr class="mt-16 border-slate-200">  
+        
+        <!-- More Projects -->
+        <div class="delay-[150ms] duration-[600ms] taos:translate-y-[50px] taos:opacity-0">
+          <h2 class="mt-16 text-accent text-4xl">More Projects</h2>
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            <a href="bhakti-marga-website.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300">
+              <img src="dist/img/bm-website.png" alt="iPad with the Bhakti Marga website" class="hover:scale-110 transition duration-300">
+              <div class="px-10">
+                <h3 class="text-xl xl:text-2xl font-medium">Bhakti Marga website</h3>
+                <p class="mt-2 uppercase text-medium">Case Study</p>
+              </div>
+            </a>
+            <a href="sauce-labs-billing.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300 overflow-hidden">
+              <img src="dist/img/sl-billing.png" alt="MacBook with the Sauce Labs pricing page" class="hover:scale-110 transition duration-300">
+              <div class="px-10">
+                <h3 class="text-xl xl:text-2xl font-medium">Sauce Labs billing model</h3>
+                <p class="mt-2 uppercase text-medium">Case Study</p>
+              </div>
+            </a>  
+          </div>
         </div>
       </div>
 
@@ -217,6 +221,14 @@
           </div>
         </div>
       </section>
+
+      <!-- Footer -->
+      <div class="mx-3">
+        <div class="container mx-auto">
+          <hr class="mt-16 border-slate-200">  
+          <p class="text-medium text-sm mt-4 text-center">Designed with <span class="text-accent">&#x2665;</span> in Figma. Coded with fun with Tailwind CSS.</p>
+        </div>  
+      </div>
       
       <!-- Go to Top -->
       <div class="fixed bottom-8 right-8">
@@ -226,5 +238,6 @@
       </div>
     </main>
     <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </body>
 </html>

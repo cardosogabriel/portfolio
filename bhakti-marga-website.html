@@ -6,6 +6,7 @@
     <title>Bhakti Marga Website &#183; Gabriel Cardoso</title>
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="icon" type="image/png" href="dist/img/favicon.png">
+    <script>document.documentElement.classList.add('js')</script>
   </head>
   <body class="text-gray-900">
     <header>
@@ -21,9 +22,9 @@
         </nav>
       </section>
     </header>
-    <main class="pb-16">
+    <main class="pb-8">
       <!-- Header -->
-      <div class="px-3">
+      <div class="px-3 delay-[300ms] duration-[600ms] taos:translate-y-[50px] taos:opacity-0">
         <section id="project-header" class="container mx-auto grid grid-cols-12 bg-gradient-to-bl from-violet-100 to-lime-100 from-50% to-110% rounded-2xl sm:h-72 md:h-64 overflow-hidden">
           <div class="p-6 sm:py-10 sm:pl-10 col-span-12 sm:col-span-9 md:col-span-8 lg:col-span-6 xl:col-span-5 2xl:col-span-4">
             <h1 class="text-3xl sm:text-4xl">Bhakti Marga <br>Website</h1>
@@ -41,7 +42,7 @@
         </section>
       </div>
       <!-- Container 768 -->
-      <div class="px-3 container lg:max-w-3xl mx-auto">
+      <div class="px-3 container lg:max-w-3xl mx-auto delay-[600ms] duration-[600ms] taos:translate-y-[50px] taos:opacity-0">
         <h2 class="mt-16 text-accent text-4xl">The Problem</h2>
         <p class="text-lg mt-4">Bhakti Marga, a spiritual organization, wanted to have their main website redesigned so that newcomers could better understand the mission, and the offerings, and find a way to connect in person. I was tasked with leading the design and coordinating the project.</p>
         <p class="text-lg mt-6">As the lead designer, I guided the team through the design process, from gathering user requirements to publishing a website in production. To deliver this project I worked directly with content writers, photographers, another designer, and a web developer. Stakeholders were two directors of the organization and one spiritual leader.</p>
@@ -174,25 +175,27 @@
             <li>The final survey showed that people received the website well and could navigate through the content, which was our goal.</li>
           </ul>      
         </section>      
-        <hr class="mt-16">  
-
+        <hr class="mt-16 border-slate-200">  
+        
         <!-- More Projects -->
-        <h2 class="mt-16 text-accent text-4xl">More Projects</h2>
-        <div class="mt-8 grid gap-6 md:grid-cols-2">
-          <a href="sauce-labs-billing.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300 overflow-hidden">
-            <img src="dist/img/sl-billing.png" alt="MacBook with the Sauce Labs pricing page" class="hover:scale-110 transition duration-300">
-            <div class="px-10">
-              <h3 class="text-xl xl:text-2xl font-medium">Sauce Labs billing model</h3>
-              <p class="mt-2 uppercase text-medium">Case Study</p>
-            </div>
-          </a>
-          <a href="awake-app.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300">
-            <img src="dist/img/awake.png" alt="iPhone with the Awake application" class="hover:scale-110 transition duration-300">
-            <div class="px-10">
-              <h3 class="text-xl xl:text-2xl font-medium">Awake mobile application</h3>
-              <p class="mt-2 uppercase text-medium">Case Study</p>
-            </div>
-          </a>
+        <div class="delay-[150ms] duration-[600ms] taos:translate-y-[50px] taos:opacity-0">
+          <h2 class="mt-16 text-accent text-4xl">More Projects</h2>
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            <a href="sauce-labs-billing.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300 overflow-hidden">
+              <img src="dist/img/sl-billing.png" alt="MacBook with the Sauce Labs pricing page" class="hover:scale-110 transition duration-300">
+              <div class="px-10">
+                <h3 class="text-xl xl:text-2xl font-medium">Sauce Labs billing model</h3>
+                <p class="mt-2 uppercase text-medium">Case Study</p>
+              </div>
+            </a>
+            <a href="awake-app.html" class="rounded-2xl bg-background hover:bg-violet-100 py-8 block transition duration-300">
+              <img src="dist/img/awake.png" alt="iPhone with the Awake application" class="hover:scale-110 transition duration-300">
+              <div class="px-10">
+                <h3 class="text-xl xl:text-2xl font-medium">Awake mobile application</h3>
+                <p class="mt-2 uppercase text-medium">Case Study</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -207,6 +210,14 @@
           </div>
         </div>
       </section>
+
+      <!-- Footer -->
+      <div class="mx-3">
+        <div class="container mx-auto">
+          <hr class="mt-16 border-slate-200">  
+          <p class="text-medium text-sm mt-4 text-center">Designed with <span class="text-accent">&#x2665;</span> in Figma. Coded with fun with Tailwind CSS.</p>
+        </div>  
+      </div>
       
       <!-- Go to Top -->
       <div class="fixed bottom-8 right-8">
@@ -216,5 +227,6 @@
       </div>
     </main>
     <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </body>
 </html>
